@@ -1,0 +1,6 @@
+# ai-core dependeses
+pydantic
+langchain
+langchain-openai
+python-dotenv
+typer
