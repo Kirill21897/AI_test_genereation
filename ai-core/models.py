@@ -11,6 +11,8 @@ class GenerationInput(BaseModel):
     level: Literal['Junior', 'Middle', 'Senior', "Expert"]
     num_questtions: int = Field(5, ge=3, le=15)
 
+    subdomain: Optional[str] = None
+    additional_context: Optional[str] = None
 
 class Question(BaseModel):
     """Один вопрос в тесте"""
