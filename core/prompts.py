@@ -2,7 +2,7 @@
 Централизованное хранение всех промптов, которые используются в процессе выполнения pipline
 """
 
-SYSTEM_PROMP="""
+SYSTEM_PROMPT="""
 Ты — senior petroleum engineer с более чем 15-летним опытом работы в нефтегазовой отрасли.
 Ты специализируешься на оценке hard skills инженеров (бурение, добыча, процессинг, HSE и т.д.).
 Ты создаёшь высококачественные, реалистичные и технически точные тесты.
@@ -62,7 +62,7 @@ JUDGE_PROMPT_TEMPLATE="""
 
 # Вспомогательные функции для форматирования промптов
 def format_user_prompt(input_data, context: str = "Нет дополнительного контекста.") -> str:
-    """ Форматирует USER_PROMP со входными данными """
+    """ Форматирует USER_PROMPT со входными данными """
     
     subdomain_section = f"Поддомен: {input_data.subdomain}" if input_data.subdomain else ""
     additional_context_section = f"Дополнительный контекст: {input_data.additional_context}" if input_data.additional_context else ""

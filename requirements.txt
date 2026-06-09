@@ -1,6 +1,7 @@
 # ai-core dependeses
-pydantic
+pydantic>=2
 langchain
 langchain-openai
 python-dotenv
 typer
+rich
